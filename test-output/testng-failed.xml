@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pages.homepage">
+      <class name="Pages.LiveScores">
         <methods>
-          <include name="backendTest"/>
-          <include name="hsb"/>
-          <include name="Homepagestate"/>
+          <include name="allmatches"/>
+          <include name="ClickTeamSelectedEvent"/>
         </methods>
-      </class> <!-- Pages.homepage -->
+      </class> <!-- Pages.LiveScores -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
