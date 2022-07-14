@@ -91,7 +91,15 @@ public class liveScoresObject {
 		
 		public List<WebElement> viewallMatches()
 		{
-			return viewallMatches();
+			return viewallMatches;
+		}
+		
+		@FindBy(xpath="//span[text()='Clear All']")
+		WebElement clearAll;
+		
+		public WebElement clearAll()
+		{
+			return clearAll;
 		}
 		
 		

@@ -31,19 +31,19 @@ import base.browser;
 import junit.framework.Assert;
 import objects.homepageObject;
 import objects.liveScoresObject;
+import utilities.CommonMethods;
 
-import utilities.Commonmethods;
 import utilities.testData;
 
 public class LiveScores extends browser{
 	
 	public WebDriver driver;
 	public  Logger log = LogManager.getLogger(LiveScores.class);
-	Commonmethods c = new Commonmethods();
+	CommonMethods c = new CommonMethods();
 	String gameurl;
 	SimpleDateFormat sd = new SimpleDateFormat("dd MMM yyyy");
 	Date d = new Date();
-	liveScoresObject ls = new liveScoresObject(driver);
+	
 	public String PropertiesData(String name) throws IOException
 	{
 		Properties prop = new Properties();
@@ -69,7 +69,7 @@ public class LiveScores extends browser{
 		catch(Exception e)
 		{
 			System.out.println(e);
-		}	
+		}
 	}
 	
 	@Test(priority=2)
@@ -83,7 +83,9 @@ public class LiveScores extends browser{
 	@Test(priority=1) // https://hotstar.atlassian.net/browse/ER-4794
 	public void brokenURl() throws IOException, InterruptedException
 	{
+		
 		String url = PropertiesData("liveScores");
+		driver.get(url);
 		int status = c.brokenurl(driver,url);
 		System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
 		if(status == 404 || status == 504  || status == 500)
@@ -116,7 +118,7 @@ public class LiveScores extends browser{
 		ls.reset().click();
 	}
 	
-	@Test(priority=5,enabled= false)
+	@Test(priority=5,enabled= true)
 	public void TopEvents() throws IOException, InterruptedException
 	{
 		liveScoresObject ls = new liveScoresObject(driver);
@@ -138,7 +140,7 @@ public class LiveScores extends browser{
 		String gameUrl = a.get(i);
 		byte[] b = gameUrl.getBytes();
 		fos.write(b);
-		Commonmethods c = new Commonmethods();
+		CommonMethods c = new CommonMethods();
 		String s = new String(b);
 		String link = s.toString();
 		c.brokenurl(driver, link);
@@ -163,60 +165,68 @@ public class LiveScores extends browser{
 	}
 	
 	@Test(priority=8)
-	public void Apply()
+	public void Apply() throws InterruptedException
 	{
 		liveScoresObject ls = new liveScoresObject(driver);
-		ls.Apply();
+		ls.Apply().click();
+		Thread.sleep(2000);
 	}
 	
 	@Test(priority=9)
-	public void ClickTeamSelectedEvent()
+	public void ClickTeamSelectedEvent() throws IOException, InterruptedException
 	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10000));
 		liveScoresObject ls = new liveScoresObject(driver);
 		List<WebElement> events = ls.Events();
-		String parentWindow = " ";
-		for(int i = 0;  i<= events.size();i++)
+		
+		for(WebElement event:events)
 		{
-			JavascriptExecutor je = (JavascriptExecutor) driver;
-			je.executeScript("window.open()");
-			Set<String> a = driver.getWindowHandles();
-			Iterator<String> ij = a.iterator();
-			parentWindow = driver.getWindowHandle();
-			while(ij.hasNext())
+			String url = event.getAttribute("href");
+			CommonMethods c = new CommonMethods();
+			int status = c.brokenurl(driver, url);
+			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
+			if(status == 404 || status == 504  || status == 500)
 			{
-				driver.switchTo().window(ij.next());
+			log.info("Page url is:"+url+"Status of the page url is:"+ status);
+			Assert.assertFalse(true);
+			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
 			}
-			String url = events.get(i).getAttribute("href");
-			driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL +"t");
-			ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
-		    driver.switchTo().window(tabs.get(i));
-		    driver.get(url);
+			
 		}
-		driver.switchTo().window(parentWindow);
+			
 	}
 	
-	@Test(priority=10)
+	@Test(priority = 10)
+	public void clearall()
+	{
+		liveScoresObject ls = new liveScoresObject(driver);
+		ls.teamfilter().click();
+		ls.clearAll().click();
+		ls.Apply().click();
+		ls.reset().click();
+	}
 	
-	public void allmatches()
+	@Test(priority=11)
+	
+	public void allmatches() throws IOException, InterruptedException
 	{
 		liveScoresObject ls = new liveScoresObject(driver);
 		List<WebElement> links = ls.viewallMatches();
-		String parentWindow = " ";
 		for(WebElement link: links)
 		{
-			JavascriptExecutor je = (JavascriptExecutor) driver;
-			je.executeScript("window.open()");
-			Set<String> a = driver.getWindowHandles();
-			Iterator<String> i = a.iterator();
-			 parentWindow = driver.getWindowHandle();
-			while(i.hasNext())
-			{
-				driver.switchTo().window(i.next());
-			}
 			String url = link.getAttribute("href");
-			driver.get(url);	
+			CommonMethods c = new CommonMethods();
+			int status = c.brokenurl(driver, url);
+			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
+			if(status == 404 || status == 504  || status == 500)
+			{
+			log.info("Page url is:"+url+"Status of the page url is:"+ status);
+			Assert.assertFalse(true);
+			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
+			}
+			
 		}
-		driver.switchTo().window(parentWindow);
+		
 	}
 	
 	}

@@ -4,7 +4,6 @@
   <test parallel="classes" thread-count="5" name="Test">
     <classes>
       <class name="Pages.homepage"/>
-		<class name="Pages.LiveScores"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

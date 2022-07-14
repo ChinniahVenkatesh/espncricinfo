@@ -18,15 +18,15 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.browser;
 
 import objects.homepageObject;
+import utilities.CommonMethods;
 
-import utilities.Commonmethods;
 import utilities.testData;
 
 
@@ -34,19 +34,18 @@ public class homepage extends browser {
 	
 	public WebDriver driver;
 	public  Logger log = LogManager.getLogger(homepage.class);
-	public Commonmethods c = new Commonmethods();
+	public CommonMethods c = new CommonMethods();
 	
 	
 	@Test(priority=0)
-	public void Homepagestate() throws IOException
+	public void Homepagestate() throws IOException, InterruptedException
 	{
 		driver = browserInstallation();
 		driver.get("https://pp.espncricinfo.com/?hsci=true");
 		driver.manage().window().maximize();
-		driver.navigate().refresh();
-		log.info(driver.getTitle());
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60000));
+		Thread.sleep(10000);
 		homepageObject ho = new homepageObject(driver);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60000));
 		try
 		{
 		ho.alert().click();
@@ -55,7 +54,8 @@ public class homepage extends browser {
 		{
 			System.out.println(e);
 		}
-		
+		log.info(driver.getTitle());
+		driver.navigate().refresh();
 	}
 	
 	
@@ -74,6 +74,7 @@ public class homepage extends browser {
 				url.add(hsbScorecell.getAttribute("href"));
 				String gameurl = hsbScorecell.getAttribute("href");
 				int Status = c.brokenurl(driver,gameurl);
+				System.out.println("Page url is:"+gameurl+"Status of the page url is:"+ Status);
 				if(Status == 404 || Status == 504)
 				{
 				log.info("Page url is:"+gameurl+"Status of the page url is:"+ Status);
