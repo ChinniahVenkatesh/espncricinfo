@@ -11,29 +11,20 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Properties;
-import java.util.Set;
-
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import org.testng.annotations.Test;
-
 import base.browser;
 import junit.framework.Assert;
 import objects.homepageObject;
 import objects.liveScoresObject;
 import utilities.CommonMethods;
 
-import utilities.testData;
+
 
 public class LiveScores extends browser{
 	
