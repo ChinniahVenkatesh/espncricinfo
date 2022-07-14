@@ -26,7 +26,7 @@ public class browser {
 	{
 		DesiredCapabilities caps = new DesiredCapabilities();
 		caps.setBrowserName("chrome");
-		driver = new RemoteWebDriver(new URL("http://192.168.1.101:4444"),caps);
+		driver = new RemoteWebDriver(new URL("http://192.168.1.100:4444"),caps);
 		return driver;
 	}
 	

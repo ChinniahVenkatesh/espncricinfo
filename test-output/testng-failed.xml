@@ -6,6 +6,7 @@
       <class name="Pages.homepage">
         <methods>
           <include name="hsb"/>
+          <include name="Homepagestate"/>
         </methods>
       </class> <!-- Pages.homepage -->
     </classes>
