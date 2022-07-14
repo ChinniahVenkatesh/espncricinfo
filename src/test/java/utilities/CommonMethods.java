@@ -17,7 +17,7 @@ import base.browser;
 
 public class CommonMethods extends browser {
 	
-	public WebDriver driver;
+	public ChromeDriver driver;
 	
 	
 	public int brokenurl(WebDriver driver , String pageurl) throws IOException, InterruptedException

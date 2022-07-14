@@ -17,23 +17,21 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class browser {
 	
-	public WebDriver driver;
-	//public ChromeDriver driver;
+
+	public ChromeDriver driver;
 	
 	
 
-	public WebDriver browserInstallation() throws IOException
+	public ChromeDriver browserInstallation() throws IOException
 	{
-		DesiredCapabilities caps = new DesiredCapabilities();
-		caps.setBrowserName("chrome");
-		driver = new RemoteWebDriver(new URL("http://192.168.1.100:4444"),caps);
+		driver = (ChromeDriver) WebDriverManager.chromedriver().create();
 		return driver;
+		
 	}
 	
 	/*public ChromeDriver browserInstallation()
 	{
-		driver = (ChromeDriver) WebDriverManager.chromedriver().create();
-		return driver;
+		
 	}*/
 	
 }
