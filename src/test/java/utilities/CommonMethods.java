@@ -35,7 +35,7 @@ public class CommonMethods extends browser {
 		HttpsURLConnection connect = (HttpsURLConnection) new URL(pageurl).openConnection();
 		connect.setRequestMethod("GET");
 		int Status = connect.getResponseCode();
-		Thread.sleep(20000);
+		Thread.sleep(10000);
 		driver.close();
 		driver.switchTo().window(parentWindow);
 		return Status;

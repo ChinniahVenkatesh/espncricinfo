@@ -5,12 +5,13 @@
     <classes>
       <class name="Pages.LiveScores">
         <methods>
-          <include name="allmatches"/>
+          <include name="Reset"/>
           <include name="TopEvents"/>
           <include name="stickyTeamFilter"/>
           <include name="selectTeamOption"/>
           <include name="Apply"/>
-          <include name="pageTitle"/>
+          <include name="quickFilter"/>
+          <include name="alert"/>
           <include name="ClickTeamSelectedEvent"/>
           <include name="clearall"/>
         </methods>

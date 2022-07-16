@@ -26,7 +26,6 @@ public class browser {
 	{
 		driver = (ChromeDriver) WebDriverManager.chromedriver().create();
 		return driver;
-		
 	}
 	
 	/*public ChromeDriver browserInstallation()
