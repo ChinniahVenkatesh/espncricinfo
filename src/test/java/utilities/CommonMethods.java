@@ -36,6 +36,7 @@ public class CommonMethods extends browser {
 		connect.setRequestMethod("GET");
 		int Status = connect.getResponseCode();
 		Thread.sleep(20000);
+		driver.close();
 		driver.switchTo().window(parentWindow);
 		return Status;
 	}

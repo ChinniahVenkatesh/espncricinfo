@@ -10,6 +10,7 @@
           <include name="stickyTeamFilter"/>
           <include name="selectTeamOption"/>
           <include name="Apply"/>
+          <include name="pageTitle"/>
           <include name="ClickTeamSelectedEvent"/>
           <include name="clearall"/>
         </methods>

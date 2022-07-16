@@ -3,5 +3,5 @@ Pages\homepage.class
 objects\liveScoresObject.class
 objects\homepageObject.class
 utilities\CommonMethods.class
+objects\browser.class
 Pages\LiveScores.class
-Pages\testLisner.class
