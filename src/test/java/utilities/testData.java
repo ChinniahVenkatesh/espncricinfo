@@ -18,7 +18,7 @@ import org.openqa.selenium.devtools.v103.network.model.Response;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 
-import base.browser;
+import objects.browser;
 
 
 

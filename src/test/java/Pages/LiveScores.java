@@ -19,8 +19,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
-import base.browser;
 import junit.framework.Assert;
+import objects.browser;
 import objects.homepageObject;
 import objects.liveScoresObject;
 import utilities.CommonMethods;

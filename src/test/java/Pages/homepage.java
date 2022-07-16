@@ -22,8 +22,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import base.browser;
-
+import objects.browser;
 import objects.homepageObject;
 import utilities.CommonMethods;
 

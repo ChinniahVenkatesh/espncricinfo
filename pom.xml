@@ -35,8 +35,7 @@
         	</configuration>
         </plugin>
       </plugins>
-</pluginManagement>
-    
+</pluginManagement>    
 </build>
   <dependencies>
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -49,15 +48,8 @@
 <dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
-    <version>7.6.1</version>
-    <scope>test</scope>
-</dependency>
-
-<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
-<dependency>
-    <groupId>com.aventstack</groupId>
-    <artifactId>extentreports</artifactId>
-    <version>5.0.9</version>
+    <version>7.5</version>
+    <scope>compile</scope>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-core -->
 <dependency>
@@ -87,12 +79,5 @@
     <artifactId>commons-io</artifactId>
     <version>2.11.0</version>
 </dependency>
-<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.18.24</version>
-		<scope>provided</scope>
-	</dependency>
-
   </dependencies>
 </project>
