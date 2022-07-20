@@ -7,6 +7,7 @@ import java.net.URL;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -24,13 +25,10 @@ public class browser {
 
 	public ChromeDriver browserInstallation() throws IOException
 	{
+		ChromeOptions co = new ChromeOptions();
+		co.setHeadless(true);
 		driver = (ChromeDriver) WebDriverManager.chromedriver().create();
 		return driver;
 	}
-	
-	/*public ChromeDriver browserInstallation()
-	{
-		
-	}*/
 	
 }

@@ -3,7 +3,8 @@
 <suite name="Suite">
   <test parallel="classes" thread-count="5" name="Test">
     <classes>
-      <class name="Pages.LiveScores"/>
+      <class name="Pages.LiveScores_Live"/>
+		<class name="Pages.LiveScores_upcoimg"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

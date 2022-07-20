@@ -1,17 +1,19 @@
 package utilities;
 
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.Iterator;
+import java.util.Properties;
 import java.util.Set;
 
 import javax.net.ssl.HttpsURLConnection;
 
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.Keys;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
 
 import objects.browser;
 
@@ -39,5 +41,14 @@ public class CommonMethods extends browser {
 		driver.close();
 		driver.switchTo().window(parentWindow);
 		return Status;
+	}
+	
+	public String PropertiesData(String name) throws IOException
+	{
+		Properties prop = new Properties();
+		String path = System.getProperty("user.dir")+"\\src\\test\\java\\Pages\\testData\\browserOption.properties";
+		FileInputStream fis = new FileInputStream(path);
+		prop.load(fis);
+		return prop.getProperty(name);
 	}
 }

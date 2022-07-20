@@ -4,7 +4,7 @@ package Pages;
 
 
 import java.io.File;
-import java.io.FileInputStream;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
@@ -12,7 +12,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
-import java.util.Properties;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebElement;
@@ -24,29 +24,24 @@ import objects.browser;
 import objects.homepageObject;
 import objects.liveScoresObject;
 import utilities.CommonMethods;
-public class LiveScores extends browser{
-	
+import utilities.testData;
+public class LiveScores_Live extends browser{
+
 	public ChromeDriver driver;
-	public  Logger log = LogManager.getLogger(LiveScores.class);
+	public  Logger log = LogManager.getLogger(LiveScores_Live.class);
 	CommonMethods c = new CommonMethods();
 	String gameurl;
 	SimpleDateFormat sd = new SimpleDateFormat("dd MMM yyyy");
 	Date d = new Date();
 	
-	public String PropertiesData(String name) throws IOException
-	{
-		Properties prop = new Properties();
-		String path = System.getProperty("user.dir")+"\\src\\test\\java\\Pages\\testData\\browserOption.properties";
-		FileInputStream fis = new FileInputStream(path);
-		prop.load(fis);
-		return prop.getProperty(name);
-	}
+	
 	
 	@Test(priority=0)
 	public void alert() throws IOException, InterruptedException
 	{
 		driver = browserInstallation();
-		driver.get(PropertiesData("domainurl"));
+		CommonMethods c = new CommonMethods();
+		driver.get(c.PropertiesData("domainurl"));
 		driver.manage().window().maximize();
 		Thread.sleep(10000);
 		homepageObject ho = new homepageObject(driver);
@@ -57,7 +52,7 @@ public class LiveScores extends browser{
 		}
 		catch(Exception e)
 		{
-			System.out.println(e);
+			log.error(e);
 		}
 	}
 	
@@ -65,23 +60,21 @@ public class LiveScores extends browser{
 	public void pageTitle() throws IOException
 	{
 		String title = driver.getTitle();
-		System.out.println("Live cricket scores and updates,"+sd.format(d)+" for all matches, teams and tournaments");
 		Assert.assertEquals("Live cricket scores and updates, "+sd.format(d)+" for all matches, teams and tournaments", title);
 	}
 	
 	@Test(priority=1) // https://hotstar.atlassian.net/browse/ER-4794
 	public void brokenURl() throws IOException, InterruptedException
 	{
-		
-		String url = PropertiesData("liveScores");
+		CommonMethods c = new CommonMethods();
+		String url = c.PropertiesData("liveScores");
 		driver.get(url);
 		int status = c.brokenurl(driver,url);
-		System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
+		log.info("Page url is:"+url+"Status of the page url is:"+ status);
 		if(status == 404 || status == 504  || status == 500)
 		{
 		log.info("Page url is:"+url+"Status of the page url is:"+ status);
 		Assert.assertFalse(true);
-		System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
 		}
 	}
 	
@@ -132,7 +125,8 @@ public class LiveScores extends browser{
 		CommonMethods c = new CommonMethods();
 		String s = new String(b);
 		String link = s.toString();
-		c.brokenurl(driver, link);
+		int status =  c.brokenurl(driver, link);
+		log.info("Page url is:"+link+"Status of the page url is:"+ status);
 		fos.write("\n".getBytes());
 		fos.flush();
 		}
@@ -143,6 +137,7 @@ public class LiveScores extends browser{
 	{	
 		liveScoresObject ls = new liveScoresObject(driver);
 		ls.teamfilter().click();
+		System.out.println(ls.Apply().isEnabled());
 	}
 	
 	@Test(priority=7)
@@ -173,14 +168,12 @@ public class LiveScores extends browser{
 			String url = event.getAttribute("href");
 			CommonMethods c = new CommonMethods();
 			int status = c.brokenurl(driver, url);
-			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
+			log.info("Page url is:"+url+"Status of the page url is:"+ status);
 			if(status == 404 || status == 504  || status == 500)
 			{
 			log.info("Page url is:"+url+"Status of the page url is:"+ status);
 			Assert.assertFalse(true);
-			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
 			}
-			
 		}
 			
 	}
@@ -206,18 +199,23 @@ public class LiveScores extends browser{
 			String url = link.getAttribute("href");
 			CommonMethods c = new CommonMethods();
 			int status = c.brokenurl(driver, url);
-			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
+			log.info("Page url is:"+url+"Status of the page url is:"+ status);
 			if(status == 404 || status == 504  || status == 500)
 			{
 			log.info("Page url is:"+url+"Status of the page url is:"+ status);
 			Assert.assertFalse(true);
-			System.out.println("Page url is:"+url+"Status of the page url is:"+ status);
 			}
-			
 		}
-		
 	}
 	
+	@Test(priority=12)
+	public void backendTest() throws IOException, InterruptedException
+	{
+		CommonMethods c = new CommonMethods();
+		String url = c.PropertiesData("liveScores");
+		testData t = new testData(driver,url);
+		
+	}
 	}
 
 

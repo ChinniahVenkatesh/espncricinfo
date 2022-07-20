@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="5" parallel="classes" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="Pages.LiveScores_Live">
+        <methods>
+          <include name="allmatches"/>
+          <include name="TopEvents"/>
+          <include name="clearall"/>
+          <include name="stickyTeamFilter"/>
+          <include name="selectTeamOption"/>
+          <include name="Apply"/>
+          <include name="quickFilter"/>
+          <include name="backendTest"/>
+          <include name="Reset"/>
+          <include name="ClickTeamSelectedEvent"/>
+          <include name="brokenURl"/>
+        </methods>
+      </class> <!-- Pages.LiveScores_Live -->
+      <class name="Pages.LiveScores_upcoimg">
+        <methods>
+          <include name="pageTitle"/>
+          <include name="clickdate"/>
+          <include name="clickviewByDay"/>
+          <include name="TeamFilter"/>
+        </methods>
+      </class> <!-- Pages.LiveScores_upcoimg -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

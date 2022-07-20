@@ -1,0 +1,194 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 15, Errors: 0, Skipped: 0, Time elapsed: 645.627 s <<< FAILURE! - in TestSuite
+Pages.LiveScores_Live.brokenURl  Time elapsed: 13.429 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, get {url=https://pp.espncricinfo.com/live-cricket-score}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.brokenURl(LiveScores_Live.java:72)
+
+Pages.LiveScores_upcoimg.pageTitle  Time elapsed: 0.979 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc78024cb86e2301a797a70238b2246c, get {url=https://pp.espncricinfo.com/live-cricket-match-schedule-fixtures}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61192/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc78024cb86e2301a797a70238b2246c
+	at Pages.LiveScores_upcoimg.pageTitle(LiveScores_upcoimg.java:51)
+
+Pages.LiveScores_Live.quickFilter  Time elapsed: 1.439 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, findElements {using=xpath, value=//div[@class='ds-flex ds-items-center']/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.quickFilter(LiveScores_Live.java:89)
+
+Pages.LiveScores_Live.Reset  Time elapsed: 1.788 s  <<< FAILURE!
+org.openqa.selenium.ElementClickInterceptedException: 
+element click intercepted: Element <div class="ds-mr-2 ds-pr-2 ds-py-1 ds-text-tight-s ds-font-bold ds-border-r ds-border-ui-stroke ds-opacity-50 ds-text-ui-typo-light">...</div> is not clickable at point (41, 436). Other element would receive the click: <iframe id="google_ads_iframe_21783347309/espn.cricinfo.com/matches/liveindex_0" name="google_ads_iframe_21783347309/espn.cricinfo.com/matches/liveindex_0" title="3rd party ad content" width="1" height="1" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" role="region" aria-label="Advertisement" tabindex="0" srcdoc="" style="border: 0px; vertical-align: bottom; width: 100%; height: 100%; position: fixed; z-index: 9999999; top: 0px; left: 0px;" data-google-container-id="1" data-load-complete="true"></iframe>
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, clickElement {id=00a2c2df-c538-480b-8704-7f5a2a36f29e}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (8d3a067564bb7bd898f43ba9b5c1affd)] -> xpath: //div[text()='Reset']]
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.Reset(LiveScores_Live.java:100)
+
+Pages.LiveScores_upcoimg.clickviewByDay  Time elapsed: 7.595 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc78024cb86e2301a797a70238b2246c, clickElement {id=37423052-5e4b-42e9-b5da-2aa491a87b23}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61192/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (fc78024cb86e2301a797a70238b2246c)] -> css selector: div[class*='hover:ds-bg-ui-fill-hover']:nth-child(1)]
+Session ID: fc78024cb86e2301a797a70238b2246c
+	at Pages.LiveScores_upcoimg.clickviewByDay(LiveScores_upcoimg.java:61)
+
+Pages.LiveScores_Live.TopEvents  Time elapsed: 2.116 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, get {url=https://pp.espncricinfo.com/series/south-africa-in-england-2022-1276896/england-vs-south-africa-1st-odi-1276910/full-scorecard}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.TopEvents(LiveScores_Live.java:128)
+
+Pages.LiveScores_Live.stickyTeamFilter  Time elapsed: 2.528 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, findElement {using=css selector, value=div[class*='ds-w-96 ds-flex ds-shadow-elevated'] div div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.stickyTeamFilter(LiveScores_Live.java:139)
+
+Pages.LiveScores_Live.selectTeamOption  Time elapsed: 174.445 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, findElement {using=xpath, value=//div[@class='ds-grid ds-grid-cols-2 ds-gap-x-4 ds-px-4']/div[1]/div/span}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.selectTeamOption(LiveScores_Live.java:148)
+Caused by: java.util.concurrent.TimeoutException
+	at Pages.LiveScores_Live.selectTeamOption(LiveScores_Live.java:148)
+
+Pages.LiveScores_Live.Apply  Time elapsed: 180.013 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, findElement {using=xpath, value=//span[text()='Apply']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.Apply(LiveScores_Live.java:155)
+Caused by: java.util.concurrent.TimeoutException
+	at Pages.LiveScores_Live.Apply(LiveScores_Live.java:155)
+
+Pages.LiveScores_upcoimg.clickdate  Time elapsed: 152.626 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+unknown error: cannot determine loading status
+from unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [fc78024cb86e2301a797a70238b2246c, get {url=https://pp.espncricinfo.com/series/major-clubs-limited-over-tournament-2022-1321581/saracens-sports-club-vs-kalutara-town-club-group-a-1321730/live-cricket-score}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61192}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61192/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fc78024cb86e2301a797a70238b2246c
+	at Pages.LiveScores_upcoimg.clickdate(LiveScores_upcoimg.java:88)
+
+Pages.LiveScores_Live.ClickTeamSelectedEvent  Time elapsed: 27.39 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+java.util.concurrent.TimeoutException
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, setTimeout {implicit=10000000}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.ClickTeamSelectedEvent(LiveScores_Live.java:162)
+Caused by: java.util.concurrent.TimeoutException
+	at Pages.LiveScores_Live.ClickTeamSelectedEvent(LiveScores_Live.java:162)
+
+Pages.LiveScores_Live.clearall  Time elapsed: 0.257 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, findElement {using=css selector, value=div[class*='ds-w-96 ds-flex ds-shadow-elevated'] div div}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:185)
+
+Pages.LiveScores_Live.allmatches  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, findElements {using=xpath, value=//span[text()='All Matches']/parent::a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:197)
+
+Pages.LiveScores_Live.backendTest  Time elapsed: 0.004 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=103.0.5060.114)
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [8d3a067564bb7bd898f43ba9b5c1affd, executeScript {script=window.open(), args=[]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\VENKATEC\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:61190}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61190/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d3a067564bb7bd898f43ba9b5c1affd
+	at Pages.LiveScores_Live.backendTest(LiveScores_Live.java:216)
+
+Pages.LiveScores_upcoimg.TeamFilter  Time elapsed: 38.507 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to find element with locator By.cssSelector: div[class*='ds-w-96 ds-flex ds-shadow-elevated'] div div
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.3.0', revision: 'a4995e2c09*'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: RemoteWebDriver
+	at Pages.LiveScores_upcoimg.TeamFilter(LiveScores_upcoimg.java:97)
+

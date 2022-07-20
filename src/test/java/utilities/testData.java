@@ -4,13 +4,16 @@ package utilities;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.util.Iterator;
 import java.util.Optional;
 import java.util.Properties;
+import java.util.Set;
 
 import javax.net.ssl.HttpsURLConnection;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.devtools.DevTools;
 import org.openqa.selenium.devtools.v103.network.Network;
@@ -29,6 +32,15 @@ public class testData extends browser{
 
 public  testData(ChromeDriver driver, String url) throws IOException, InterruptedException 
 {
+	JavascriptExecutor je = (JavascriptExecutor) driver;
+	je.executeScript("window.open()");
+	Set<String> windows = driver.getWindowHandles();
+	Iterator<String> i = windows.iterator();
+	String  parentWindow = i.next();
+	while(i.hasNext())
+	{
+		driver.switchTo().window(i.next());
+	}
 	driver.get(url);
 	DevTools devtools = driver.getDevTools();
 	devtools.createSession();
@@ -44,15 +56,7 @@ public  testData(ChromeDriver driver, String url) throws IOException, Interrupte
 	}
 });
 	Thread.sleep(60000);
-}
-
-public String PropertiesData(String name) throws IOException
-{
-	Properties prop = new Properties();
-	String path = System.getProperty("user.dir")+"\\src\\test\\java\\Pages\\testData\\browserOption.properties";
-	FileInputStream fis = new FileInputStream(path);
-	prop.load(fis);
-	return prop.getProperty(name);
+	driver.switchTo().window(parentWindow);
 }
 
 }

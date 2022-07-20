@@ -2,6 +2,8 @@ utilities\testData.class
 Pages\homepage.class
 objects\liveScoresObject.class
 objects\homepageObject.class
+Pages\LiveScores_Live.class
 utilities\CommonMethods.class
 objects\browser.class
-Pages\LiveScores.class
+Pages\LiveScores_upcoimg.class
+objects\LiveScoresUpcoming.class

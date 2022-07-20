@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Pages.LiveScores">
+      <class name="Pages.LiveScores_Live">
         <methods>
-          <include name="Reset"/>
-          <include name="TopEvents"/>
-          <include name="stickyTeamFilter"/>
-          <include name="selectTeamOption"/>
-          <include name="Apply"/>
           <include name="quickFilter"/>
-          <include name="alert"/>
-          <include name="ClickTeamSelectedEvent"/>
-          <include name="clearall"/>
+          <include name="pageTitle"/>
+          <include name="brokenURl"/>
         </methods>
-      </class> <!-- Pages.LiveScores -->
+      </class> <!-- Pages.LiveScores_Live -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
