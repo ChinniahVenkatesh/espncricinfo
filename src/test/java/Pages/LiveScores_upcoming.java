@@ -96,6 +96,7 @@ public class LiveScores_upcoming extends browser{
 				log.info("Page url is:"+url+"Status of the page url is:"+ status);
 				}
 			}
+			break;
 		}
 		System.out.println("passcount:"+count);
 		System.out.println("failcount"+failcount);
