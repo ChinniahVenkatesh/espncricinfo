@@ -3,23 +3,23 @@ package utilities;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
+import java.time.Duration;
 import java.util.Iterator;
 import java.util.Properties;
 import java.util.Set;
+
 
 import javax.net.ssl.HttpsURLConnection;
 
 import org.openqa.selenium.JavascriptExecutor;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 
-import objects.browser;
-
-public class CommonMethods extends browser {
+public class CommonMethods {
 	
-	public ChromeDriver driver;
+	public WebDriver driver;
+	
 	
 	
 	public int brokenurl(WebDriver driver , String pageurl) throws IOException, InterruptedException
@@ -34,10 +34,10 @@ public class CommonMethods extends browser {
 			driver.switchTo().window(i.next());
 		}
 		driver.navigate().to(pageurl);
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(10000));
 		HttpsURLConnection connect = (HttpsURLConnection) new URL(pageurl).openConnection();
 		connect.setRequestMethod("GET");
 		int Status = connect.getResponseCode();
-		Thread.sleep(10000);
 		driver.close();
 		driver.switchTo().window(parentWindow);
 		return Status;

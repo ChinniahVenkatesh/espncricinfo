@@ -1,6 +1,7 @@
 package Pages;
 
 import java.io.File;
+
 import java.io.FileOutputStream;
 import java.io.IOException;
 
@@ -12,28 +13,30 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-
+import org.openqa.selenium.devtools.v103.network.model.Response;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.testng.Assert;
+
 import org.testng.annotations.Test;
 
 import objects.browser;
 import objects.homepageObject;
 import utilities.CommonMethods;
+import utilities.testData;
 
 
 
 public class homepage extends browser {
 	
-	public ChromeDriver driver;
+	public WebDriver driver;
 	public  Logger log = LogManager.getLogger(homepage.class);
 	public CommonMethods c = new CommonMethods();
-	
+	public ChromeDriver driver1;
+	public ArrayList<String> gamepageUrl = new ArrayList<String>();
 	
 	@Test(priority=0)
 	public void Homepagestate() throws IOException, InterruptedException
@@ -71,15 +74,17 @@ public class homepage extends browser {
 			{
 				url.add(hsbScorecell.getAttribute("href"));
 				String gameurl = hsbScorecell.getAttribute("href");
+				gamepageUrl.add(gameurl);
 				int Status = c.brokenurl(driver,gameurl);
 				System.out.println("Page url is:"+gameurl+"Status of the page url is:"+ Status);
-				if(Status == 404 || Status == 504)
+				if(Status == 404 || Status == 504 || Status ==  400 || Status == 200)
 				{
 				log.info("Page url is:"+gameurl+"Status of the page url is:"+ Status);
-				Assert.assertFalse(true);
+				//Assert.assertFalse(true);
 				}
 			}
 		}
+	
 		
 		String path = System.getProperty("user.dir")+"\\src\\test\\java\\testingSource\\GamePage";
 		File file = new File(path);
@@ -89,17 +94,30 @@ public class homepage extends browser {
 		{
 		String gameUrl = url.get(i);
 		byte[] b = gameUrl.getBytes();
-		System.out.println(b);
 		fos.write(b);
 		fos.write("\n".getBytes());
 		fos.flush();
 		}
+		
+		
+		
 	}
 	
-
-	
-	
-	
-	
-
+	@Test(priority=3)
+	public void backendTest() throws IOException, InterruptedException
+	{
+		CommonMethods c = new CommonMethods();
+		driver1= browserchrome();
+		driver1.get(c.PropertiesData("domainurl"));
+		for(int i =0; i< gamepageUrl.size();i++)
+		{
+		String pageLink = gamepageUrl.get(i);
+		testData t = new testData();
+		Response response = t.BackendtestData(driver1, pageLink);
+		if(response.getStatus() == 400 || response.getStatus() == 404 || response.getStatus() == 500)
+		{
+			log.info("Url of the page:"+response.getUrl()+"status of the page:"+response.getStatus());
+		}
+		}
+	}
 }

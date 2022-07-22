@@ -15,8 +15,9 @@ import java.util.List;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
+
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
@@ -27,7 +28,7 @@ import utilities.CommonMethods;
 import utilities.testData;
 public class LiveScores_Live extends browser{
 
-	public ChromeDriver driver;
+	public WebDriver driver;
 	public  Logger log = LogManager.getLogger(LiveScores_Live.class);
 	CommonMethods c = new CommonMethods();
 	String gameurl;
@@ -206,15 +207,6 @@ public class LiveScores_Live extends browser{
 			Assert.assertFalse(true);
 			}
 		}
-	}
-	
-	@Test(priority=12)
-	public void backendTest() throws IOException, InterruptedException
-	{
-		CommonMethods c = new CommonMethods();
-		String url = c.PropertiesData("liveScores");
-		testData t = new testData(driver,url);
-		
 	}
 	}
 

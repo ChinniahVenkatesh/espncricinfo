@@ -3,15 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
-      <class name="Pages.LiveScores">
+      <class name="Pages.LiveScores_upcoming">
         <methods>
-          <include name="Reset"/>
-          <include name="quickFilter"/>
+          <include name="TeamFilter"/>
+          <include name="calendar"/>
+          <include name="calendarclickMonth"/>
+          <include name="clickdate"/>
         </methods>
-      </class> <!-- Pages.LiveScores -->
+      </class> <!-- Pages.LiveScores_upcoming -->
+      <class name="Pages.LiveScores_Live">
+        <methods>
+          <include name="allmatches"/>
+          <include name="clearall"/>
+        </methods>
+      </class> <!-- Pages.LiveScores_Live -->
       <class name="Pages.homepage">
         <methods>
-          <include name="hsb"/>
+          <include name="backendTest"/>
         </methods>
       </class> <!-- Pages.homepage -->
     </classes>

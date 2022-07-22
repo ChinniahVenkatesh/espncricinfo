@@ -5,5 +5,5 @@ objects\homepageObject.class
 Pages\LiveScores_Live.class
 utilities\CommonMethods.class
 objects\browser.class
-Pages\LiveScores_upcoimg.class
 objects\LiveScoresUpcoming.class
+Pages\LiveScores_upcoming.class

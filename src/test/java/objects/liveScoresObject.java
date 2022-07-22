@@ -3,7 +3,7 @@ package objects;
 import java.util.List;
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.FindBy;
@@ -12,15 +12,15 @@ import org.openqa.selenium.support.PageFactory;
 public class liveScoresObject {
 	
 	
-	public ChromeDriver driver;
+	public WebDriver driver;
 	
-	public liveScoresObject(ChromeDriver driver)
+	public liveScoresObject(WebDriver driver)
 	{
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
 
-	@FindBy(xpath = "//div[@class='ds-flex ds-items-center']/div/span")
+	@FindBy(css = "div[class*='ds-flex ds-items-center'] div[class='ds-flex'] span:nth-child(1)")
 	List<WebElement> quickFilter;
 	
 	public List<WebElement> quickFilter()

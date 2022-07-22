@@ -3,13 +3,14 @@ package objects;
 
 
 import java.io.IOException;
-import java.net.URL;
+
+
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.remote.RemoteWebDriver;
+
+
+
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -19,16 +20,22 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class browser {
 	
 
-	public ChromeDriver driver;
+	public WebDriver driver;
+	public ChromeDriver driver1;
 	
 	
 
-	public ChromeDriver browserInstallation() throws IOException
+	public WebDriver browserInstallation() throws IOException
 	{
-		ChromeOptions co = new ChromeOptions();
-		co.setHeadless(true);
-		driver = (ChromeDriver) WebDriverManager.chromedriver().create();
+		driver =  WebDriverManager.edgedriver().create();
 		return driver;
+	}
+	
+	public ChromeDriver browserchrome()
+	{
+		
+		driver1 = (ChromeDriver) WebDriverManager.chromedriver().create();
+		return driver1;
 	}
 	
 }
