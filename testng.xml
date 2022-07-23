@@ -6,7 +6,7 @@
 	<class name="Pages.LiveScores_Live"/>
 	<class name="Pages.homepage"/>
 	<class name ="Pages.LiveScores_upcoming"/>
-	<class name="Pages.LiveScoresResultObject"></class>
+	<class name="Pages.LiveScoresResult"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

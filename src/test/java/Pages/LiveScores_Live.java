@@ -221,7 +221,6 @@ public class LiveScores_Live extends browser{
 		driver1 = browserchrome();
 		String liveScoresurl = c.PropertiesData("liveScores");
 		testData t = new testData();
-		
 		Response response = t.BackendtestData(driver1,liveScoresurl);
 		if(response.getStatus() == 400 || response.getStatus() == 404 || response.getStatus() == 500)
 		{
