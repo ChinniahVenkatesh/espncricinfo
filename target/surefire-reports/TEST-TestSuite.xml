@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="4,048.067" tests="19" errors="0" skipped="0" failures="5">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="520.334" tests="12" errors="0" skipped="0" failures="2">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\VENKATEC\PP-Espncricinfo\preprodEspncricinfo\target\test-classes;C:\Users\VENKATEC\PP-Espncricinfo\preprodEspncricinfo\target\classes;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VENKATEC\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\VENKATEC\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\VENKATEC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\VENKATEC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\VENKATEC\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\VENKATEC\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\VENKATEC\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\VENKATEC\.m2\repository\io\github\bonigarcia\webdrivermanager\5.2.1\webdrivermanager-5.2.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\VENKATEC\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\VENKATEC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
+    <property name="java.class.path" value="C:\Users\VENKATEC\PP-Espncricinfo\espncricinfo\target\test-classes;C:\Users\VENKATEC\PP-Espncricinfo\espncricinfo\target\classes;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VENKATEC\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\VENKATEC\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\VENKATEC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\VENKATEC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\VENKATEC\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\VENKATEC\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\VENKATEC\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\VENKATEC\.m2\repository\io\github\bonigarcia\webdrivermanager\5.2.1\webdrivermanager-5.2.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\VENKATEC\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\VENKATEC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\VENKATEC\AppData\Local\Temp\1\surefire4367733625198813374\surefirebooter5268346946775861916.jar C:\Users\VENKATEC\AppData\Local\Temp\1\surefire4367733625198813374 2022-07-21T14-48-11_877-jvmRun1 surefire3124575734307135438tmp surefire_03509303466856751810tmp"/>
+    <property name="sun.java.command" value="C:\Users\VENKATEC\AppData\Local\Temp\1\surefire8121267205446100334\surefirebooter2562929412259678635.jar C:\Users\VENKATEC\AppData\Local\Temp\1\surefire8121267205446100334 2022-07-23T11-54-03_810-jvmRun1 surefire8237058924025971035tmp surefire_07620678951127752597tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\VENKATEC\PP-Espncricinfo\preprodEspncricinfo\target\test-classes;C:\Users\VENKATEC\PP-Espncricinfo\preprodEspncricinfo\target\classes;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VENKATEC\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\VENKATEC\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\VENKATEC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\VENKATEC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\VENKATEC\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\VENKATEC\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\VENKATEC\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\VENKATEC\.m2\repository\io\github\bonigarcia\webdrivermanager\5.2.1\webdrivermanager-5.2.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\VENKATEC\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\VENKATEC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\VENKATEC\PP-Espncricinfo\espncricinfo\target\test-classes;C:\Users\VENKATEC\PP-Espncricinfo\espncricinfo\target\classes;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-java\4.3.0\selenium-java-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-api\4.3.0\selenium-api-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.3.0\selenium-chrome-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service-annotations\1.0.1\auto-service-annotations-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\service\auto-service\1.0.1\auto-service-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\auto\auto-common\1.2\auto-common-1.2.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\guava\31.1-jre\guava-31.1-jre.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\VENKATEC\.m2\repository\org\checkerframework\checker-qual\3.12.0\checker-qual-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\errorprone\error_prone_annotations\2.11.0\error_prone_annotations-2.11.0.jar;C:\Users\VENKATEC\.m2\repository\com\google\j2objc\j2objc-annotations\1.3\j2objc-annotations-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.3.0\selenium-chromium-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-json\4.3.0\selenium-json-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v101\4.3.0\selenium-devtools-v101-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v102\4.3.0\selenium-devtools-v102-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v103\4.3.0\selenium-devtools-v103-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.3.0\selenium-devtools-v85-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.3.0\selenium-edge-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.3.0\selenium-firefox-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.3.0\selenium-ie-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\4.3.0\selenium-opera-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.3.0\selenium-remote-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-buffer\4.1.78.Final\netty-buffer-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-http\4.1.78.Final\netty-codec-http-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec\4.1.78.Final\netty-codec-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler\4.1.78.Final\netty-handler-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-common\4.1.78.Final\netty-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-epoll\4.1.78.Final\netty-transport-classes-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-classes-kqueue\4.1.78.Final\netty-transport-classes-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.78.Final\netty-transport-native-epoll-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.78.Final\netty-transport-native-kqueue-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-unix-common\4.1.78.Final\netty-transport-native-unix-common-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport\4.1.78.Final\netty-transport-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-resolver\4.1.78.Final\netty-resolver-4.1.78.Final.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-api\1.15.0\opentelemetry-api-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-context\1.15.0\opentelemetry-context-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.15.0\opentelemetry-exporter-logging-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.15.0\opentelemetry-sdk-metrics-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.15.0-alpha\opentelemetry-sdk-logs-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.15.0\opentelemetry-sdk-common-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.15.0\opentelemetry-sdk-extension-autoconfigure-spi-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.15.0-alpha\opentelemetry-sdk-extension-autoconfigure-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.15.0\opentelemetry-sdk-trace-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.15.0\opentelemetry-sdk-1.15.0.jar;C:\Users\VENKATEC\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.15.0-alpha\opentelemetry-semconv-1.15.0-alpha.jar;C:\Users\VENKATEC\.m2\repository\io\ous\jtoml\2.0.0\jtoml-2.0.0.jar;C:\Users\VENKATEC\.m2\repository\net\bytebuddy\byte-buddy\1.12.10\byte-buddy-1.12.10.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client\2.12.3\async-http-client-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\org\asynchttpclient\async-http-client-netty-utils\2.12.3\async-http-client-netty-utils-2.12.3.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-codec-socks\4.1.60.Final\netty-codec-socks-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-handler-proxy\4.1.60.Final\netty-handler-proxy-4.1.60.Final.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-epoll\4.1.60.Final\netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar;C:\Users\VENKATEC\.m2\repository\io\netty\netty-transport-native-kqueue\4.1.60.Final\netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar;C:\Users\VENKATEC\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\VENKATEC\.m2\repository\com\typesafe\netty\netty-reactive-streams\2.0.4\netty-reactive-streams-2.0.4.jar;C:\Users\VENKATEC\.m2\repository\com\sun\activation\jakarta.activation\1.2.2\jakarta.activation-1.2.2.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-http\4.3.0\selenium-http-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\dev\failsafe\failsafe\3.2.4\failsafe-3.2.4.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.3.0\selenium-safari-driver-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\seleniumhq\selenium\selenium-support\4.3.0\selenium-support-4.3.0.jar;C:\Users\VENKATEC\.m2\repository\org\testng\testng\7.5\testng-7.5.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\findbugs\jsr305\3.0.1\jsr305-3.0.1.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\slf4j-api\1.7.32\slf4j-api-1.7.32.jar;C:\Users\VENKATEC\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\VENKATEC\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-core\2.17.2\log4j-core-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\logging\log4j\log4j-api\2.17.2\log4j-api-2.17.2.jar;C:\Users\VENKATEC\.m2\repository\junit\junit\3.8.1\junit-3.8.1.jar;C:\Users\VENKATEC\.m2\repository\io\github\bonigarcia\webdrivermanager\5.2.1\webdrivermanager-5.2.1.jar;C:\Users\VENKATEC\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java\3.2.13\docker-java-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-core\3.2.13\docker-java-core-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-api\3.2.13\docker-java-api-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-compress\1.21\commons-compress-1.21.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcpkix-jdk15on\1.64\bcpkix-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\bouncycastle\bcprov-jdk15on\1.64\bcprov-jdk15on-1.64.jar;C:\Users\VENKATEC\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.2.13\docker-java-transport-httpclient5-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\com\github\docker-java\docker-java-transport\3.2.13\docker-java-transport-3.2.13.jar;C:\Users\VENKATEC\.m2\repository\net\java\dev\jna\jna\5.8.0\jna-5.8.0.jar;C:\Users\VENKATEC\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\VENKATEC\.m2\repository\org\apache\commons\commons-lang3\3.12.0\commons-lang3-3.12.0.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.1.3\httpclient5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.1.3\httpcore5-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.1.3\httpcore5-h2-5.1.3.jar;C:\Users\VENKATEC\.m2\repository\commons-codec\commons-codec\1.15\commons-codec-1.15.jar;C:\Users\VENKATEC\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\VENKATEC"/>
     <property name="user.language" value="en"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2022-01-18"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-17.0.2"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\VENKATEC\PP-Espncricinfo\preprodEspncricinfo"/>
+    <property name="basedir" value="C:\Users\VENKATEC\PP-Espncricinfo\espncricinfo"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\VENKATEC\AppData\Local\Temp\1\surefire4367733625198813374\surefirebooter5268346946775861916.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\VENKATEC\AppData\Local\Temp\1\surefire8121267205446100334\surefirebooter2562929412259678635.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.2+8-LTS-86"/>
@@ -45,736 +45,77 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\VENKATEC\AppData\Local\Temp\1\"/>
     <property name="java.version" value="17.0.2"/>
-    <property name="user.dir" value="C:\Users\VENKATEC\PP-Espncricinfo\preprodEspncricinfo"/>
+    <property name="user.dir" value="C:\Users\VENKATEC\PP-Espncricinfo\espncricinfo"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
     <property name="native.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ORA_Instant_Client;C:\ORA_Instant_Client\bin;C:\Users\VENKATEC\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jre1.8.0_202\bin;C:\Users\VENKATEC\Downloads\apache-maven-3.8.4\bin;C:\Users\VENKATEC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VENKATEC\AppData\Local\Programs\Git\cmd;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-17.0.2/bin;C:\Program Files\Java\jdk-17.0.2/bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ORA_Instant_Client;C:\ORA_Instant_Client\bin;C:\Users\VENKATEC\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Java\jre1.8.0_202\bin;C:\Users\VENKATEC\Downloads\apache-maven-3.8.4\bin;C:\Users\VENKATEC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\VENKATEC\AppData\Local\Programs\Git\cmd;."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="Oracle Corporation"/>
     <property name="java.vm.version" value="17.0.2+8-LTS-86"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="alert" classname="Pages.LiveScores_Live" time="28.217">
+  <testcase name="alert" classname="Pages.LiveScores_Live" time="23.222">
     <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting MSEdgeDriver 95.0.1020.53 (9087d157c393871ec793923ce2b15ad1a91ccfb1) on port 63366
+Starting MSEdgeDriver 95.0.1020.53 (9087d157c393871ec793923ce2b15ad1a91ccfb1) on port 50534
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
 MSEdgeDriver was started successfully.
-Jul 21, 2022 2:48:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Jul 23, 2022 11:54:08 AM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected upstream dialect: W3C
-Jul 21, 2022 2:48:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 23, 2022 11:54:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 95, so returning the closest version found: a no-op implementation
-Jul 21, 2022 2:48:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Jul 23, 2022 11:54:09 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Unable to find CDP implementation matching 95.
-Jul 21, 2022 2:48:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
+Jul 23, 2022 11:54:09 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
 WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="brokenURl" classname="Pages.LiveScores_Live" time="7.391"/>
-  <testcase name="pageTitle" classname="Pages.LiveScores_Live" time="0.23"/>
-  <testcase name="quickFilter" classname="Pages.LiveScores_Live" time="2.51">
+  <testcase name="brokenURl" classname="Pages.LiveScores_Live" time="7.278"/>
+  <testcase name="pageTitle" classname="Pages.LiveScores_Live" time="0.24"/>
+  <testcase name="quickFilter" classname="Pages.LiveScores_Live" time="1.025">
     <system-out><![CDATA[true
 ]]></system-out>
   </testcase>
-  <testcase name="Reset" classname="Pages.LiveScores_Live" time="0.415"/>
-  <testcase name="TopEvents" classname="Pages.LiveScores_Live" time="141.432"/>
-  <testcase name="stickyTeamFilter" classname="Pages.LiveScores_Live" time="0.267">
+  <testcase name="Reset" classname="Pages.LiveScores_Live" time="0.279"/>
+  <testcase name="TopEvents" classname="Pages.LiveScores_Live" time="118.453"/>
+  <testcase name="stickyTeamFilter" classname="Pages.LiveScores_Live" time="0.329">
     <system-out><![CDATA[true
 ]]></system-out>
   </testcase>
-  <testcase name="selectTeamOption" classname="Pages.LiveScores_Live" time="0.095"/>
-  <testcase name="Apply" classname="Pages.LiveScores_Live" time="2.2"/>
-  <testcase name="ClickTeamSelectedEvent" classname="Pages.LiveScores_Live" time="6.705"/>
-  <testcase name="clearall" classname="Pages.LiveScores_Live" time="180.644">
-    <failure message="java.util.concurrent.TimeoutException&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [d15b20592038263ffdfe46f976d4f515, findElement {using=xpath, value=//span[text()=&apos;Apply&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:59547}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d15b20592038263ffdfe46f976d4f515" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="selectTeamOption" classname="Pages.LiveScores_Live" time="0.1"/>
+  <testcase name="Apply" classname="Pages.LiveScores_Live" time="2.217"/>
+  <testcase name="ClickTeamSelectedEvent" classname="Pages.LiveScores_Live" time="5.801"/>
+  <testcase name="clearall" classname="Pages.LiveScores_Live" time="180.523">
+    <failure message="java.util.concurrent.TimeoutException&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [10f2e1292cf03a949d7c6297682282e3, findElement {using=xpath, value=//span[text()=&apos;Apply&apos;]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:57886}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57886/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 10f2e1292cf03a949d7c6297682282e3" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 java.util.concurrent.TimeoutException
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d15b20592038263ffdfe46f976d4f515, findElement {using=xpath, value=//span[text()='Apply']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:59547}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d15b20592038263ffdfe46f976d4f515
-	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:188)
+Command: [10f2e1292cf03a949d7c6297682282e3, findElement {using=xpath, value=//span[text()='Apply']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:57886}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57886/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10f2e1292cf03a949d7c6297682282e3
+	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:192)
 Caused by: java.util.concurrent.TimeoutException
-	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:188)
+	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:192)
 ]]></failure>
   </testcase>
-  <testcase name="allmatches" classname="Pages.LiveScores_Live" time="180.015">
-    <failure message="java.util.concurrent.TimeoutException&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [d15b20592038263ffdfe46f976d4f515, findElements {using=xpath, value=//span[text()=&apos;All Matches&apos;]/parent::a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:59547}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d15b20592038263ffdfe46f976d4f515" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
+  <testcase name="allmatches" classname="Pages.LiveScores_Live" time="180.017">
+    <failure message="java.util.concurrent.TimeoutException&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [10f2e1292cf03a949d7c6297682282e3, findElements {using=xpath, value=//span[text()=&apos;See all&apos;]/parent::a}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:57886}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57886/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 10f2e1292cf03a949d7c6297682282e3" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: 
 java.util.concurrent.TimeoutException
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d15b20592038263ffdfe46f976d4f515, findElements {using=xpath, value=//span[text()='All Matches']/parent::a}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:59547}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d15b20592038263ffdfe46f976d4f515
-	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:198)
+Command: [10f2e1292cf03a949d7c6297682282e3, findElements {using=xpath, value=//span[text()='See all']/parent::a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:57886}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57886/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10f2e1292cf03a949d7c6297682282e3
+	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:202)
 Caused by: java.util.concurrent.TimeoutException
-	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:198)
-]]></failure>
-  </testcase>
-  <testcase name="pageTitle" classname="Pages.LiveScores_upcoming" time="48.757">
-    <system-err><![CDATA[Starting MSEdgeDriver 95.0.1020.53 (9087d157c393871ec793923ce2b15ad1a91ccfb1) on port 64841
-Only local connections are allowed.
-Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
-MSEdgeDriver was started successfully.
-Jul 21, 2022 2:57:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected upstream dialect: W3C
-Jul 21, 2022 2:57:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find an exact match for CDP version 95, so returning the closest version found: a no-op implementation
-Jul 21, 2022 2:57:27 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-INFO: Unable to find CDP implementation matching 95.
-Jul 21, 2022 2:57:27 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$3
-WARNING: Unable to find version of CDP to use for . You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.3.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="clickviewByDay" classname="Pages.LiveScores_upcoming" time="7.942"/>
-  <testcase name="backToCurrent" classname="Pages.LiveScores_upcoming" time="12.539"/>
-  <testcase name="clickdate" classname="Pages.LiveScores_upcoming" time="2,337.905">
-    <failure message="javascript error: Cannot set properties of null (setting &apos;destination_url&apos;)&#10;  (Session info: MicrosoftEdge=95.0.1020.30)&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [1bb26ffb7b99d5b8773e5393c1c19f08, executeScript {script=window.open(), args=[]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08" type="org.openqa.selenium.JavascriptException"><![CDATA[org.openqa.selenium.JavascriptException: 
-javascript error: Cannot set properties of null (setting 'destination_url')
-  (Session info: MicrosoftEdge=95.0.1020.30)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1bb26ffb7b99d5b8773e5393c1c19f08, executeScript {script=window.open(), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08
-	at Pages.LiveScores_upcoming.clickdate(LiveScores_upcoming.java:93)
-]]></failure>
-    <system-out><![CDATA[Total Events:403
-linkCount:1
-linkCount:2
-linkCount:3
-linkCount:4
-linkCount:5
-linkCount:6
-linkCount:7
-linkCount:8
-linkCount:9
-linkCount:10
-linkCount:11
-linkCount:12
-linkCount:13
-linkCount:14
-linkCount:15
-linkCount:16
-linkCount:17
-linkCount:18
-linkCount:19
-linkCount:20
-linkCount:21
-linkCount:22
-linkCount:23
-linkCount:24
-linkCount:25
-linkCount:26
-linkCount:27
-linkCount:28
-linkCount:29
-linkCount:30
-linkCount:31
-linkCount:32
-linkCount:33
-linkCount:34
-linkCount:35
-linkCount:36
-linkCount:37
-linkCount:38
-linkCount:39
-linkCount:40
-linkCount:41
-linkCount:42
-linkCount:43
-linkCount:44
-linkCount:45
-linkCount:46
-linkCount:47
-linkCount:48
-linkCount:49
-linkCount:50
-linkCount:51
-linkCount:52
-linkCount:53
-linkCount:54
-linkCount:55
-linkCount:56
-linkCount:57
-linkCount:58
-linkCount:59
-linkCount:60
-linkCount:61
-linkCount:62
-linkCount:63
-linkCount:64
-linkCount:65
-linkCount:66
-linkCount:67
-linkCount:68
-linkCount:69
-linkCount:70
-linkCount:71
-linkCount:72
-linkCount:73
-linkCount:74
-linkCount:75
-linkCount:76
-linkCount:77
-linkCount:78
-linkCount:79
-linkCount:80
-linkCount:81
-linkCount:82
-linkCount:83
-linkCount:84
-linkCount:85
-linkCount:86
-linkCount:87
-linkCount:88
-linkCount:89
-linkCount:90
-linkCount:91
-linkCount:92
-linkCount:93
-linkCount:94
-linkCount:95
-linkCount:96
-linkCount:97
-linkCount:98
-linkCount:99
-linkCount:100
-linkCount:101
-linkCount:102
-linkCount:103
-linkCount:104
-linkCount:105
-linkCount:106
-linkCount:107
-linkCount:108
-linkCount:109
-linkCount:110
-linkCount:111
-linkCount:112
-linkCount:113
-linkCount:114
-linkCount:115
-linkCount:116
-linkCount:117
-linkCount:118
-linkCount:119
-linkCount:120
-linkCount:121
-linkCount:122
-linkCount:123
-linkCount:124
-linkCount:125
-linkCount:126
-linkCount:127
-linkCount:128
-linkCount:129
-linkCount:130
-linkCount:131
-linkCount:132
-linkCount:133
-linkCount:134
-linkCount:135
-linkCount:136
-linkCount:137
-linkCount:138
-linkCount:139
-linkCount:140
-linkCount:141
-linkCount:142
-linkCount:143
-linkCount:144
-linkCount:145
-linkCount:146
-linkCount:147
-linkCount:148
-linkCount:149
-linkCount:150
-linkCount:151
-linkCount:152
-linkCount:153
-linkCount:154
-linkCount:155
-linkCount:156
-linkCount:157
-linkCount:158
-linkCount:159
-linkCount:160
-linkCount:161
-linkCount:162
-linkCount:163
-linkCount:164
-linkCount:165
-linkCount:166
-linkCount:167
-linkCount:168
-linkCount:169
-linkCount:170
-linkCount:171
-linkCount:172
-linkCount:173
-linkCount:174
-linkCount:175
-linkCount:176
-linkCount:177
-linkCount:178
-linkCount:179
-linkCount:180
-linkCount:181
-linkCount:182
-linkCount:183
-linkCount:184
-linkCount:185
-linkCount:186
-linkCount:187
-linkCount:188
-linkCount:189
-linkCount:190
-linkCount:191
-linkCount:192
-linkCount:193
-linkCount:194
-linkCount:195
-linkCount:196
-linkCount:197
-linkCount:198
-linkCount:199
-linkCount:200
-linkCount:201
-linkCount:202
-linkCount:203
-linkCount:204
-linkCount:205
-linkCount:206
-linkCount:207
-linkCount:208
-linkCount:209
-linkCount:210
-linkCount:211
-linkCount:212
-linkCount:213
-linkCount:214
-linkCount:215
-linkCount:216
-linkCount:217
-linkCount:218
-linkCount:219
-linkCount:220
-linkCount:221
-linkCount:222
-linkCount:223
-linkCount:224
-linkCount:225
-linkCount:226
-linkCount:227
-linkCount:228
-linkCount:229
-linkCount:230
-linkCount:231
-linkCount:232
-linkCount:233
-linkCount:234
-linkCount:235
-linkCount:236
-linkCount:237
-linkCount:238
-linkCount:239
-linkCount:240
-linkCount:241
-linkCount:242
-linkCount:243
-linkCount:244
-linkCount:245
-linkCount:246
-linkCount:247
-linkCount:248
-linkCount:249
-linkCount:250
-linkCount:251
-linkCount:252
-linkCount:253
-linkCount:254
-linkCount:255
-linkCount:256
-linkCount:257
-linkCount:258
-linkCount:259
-linkCount:260
-linkCount:261
-linkCount:262
-linkCount:263
-linkCount:264
-linkCount:265
-linkCount:266
-linkCount:267
-linkCount:268
-linkCount:269
-linkCount:270
-linkCount:271
-linkCount:272
-linkCount:273
-linkCount:274
-linkCount:275
-linkCount:276
-linkCount:277
-linkCount:278
-linkCount:279
-linkCount:280
-linkCount:281
-linkCount:282
-linkCount:283
-linkCount:284
-linkCount:285
-linkCount:286
-linkCount:287
-linkCount:288
-linkCount:289
-linkCount:290
-linkCount:291
-linkCount:292
-linkCount:293
-linkCount:294
-linkCount:295
-linkCount:296
-linkCount:297
-linkCount:298
-linkCount:299
-linkCount:300
-linkCount:301
-linkCount:302
-linkCount:303
-linkCount:304
-linkCount:305
-linkCount:306
-linkCount:307
-linkCount:308
-linkCount:309
-linkCount:310
-linkCount:311
-linkCount:312
-linkCount:313
-linkCount:314
-linkCount:315
-linkCount:316
-linkCount:317
-linkCount:318
-linkCount:319
-linkCount:320
-linkCount:321
-linkCount:322
-linkCount:323
-linkCount:324
-linkCount:325
-linkCount:326
-linkCount:327
-linkCount:328
-linkCount:329
-linkCount:330
-linkCount:331
-linkCount:332
-linkCount:333
-linkCount:334
-linkCount:335
-linkCount:336
-linkCount:337
-linkCount:338
-linkCount:339
-linkCount:340
-linkCount:341
-linkCount:342
-linkCount:343
-linkCount:344
-linkCount:345
-linkCount:346
-linkCount:347
-linkCount:348
-linkCount:349
-linkCount:350
-linkCount:351
-linkCount:352
-linkCount:353
-linkCount:354
-linkCount:355
-linkCount:356
-linkCount:357
-linkCount:358
-linkCount:359
-linkCount:360
-linkCount:361
-linkCount:362
-linkCount:363
-linkCount:364
-linkCount:365
-linkCount:366
-linkCount:367
-linkCount:368
-linkCount:369
-linkCount:370
-linkCount:371
-linkCount:372
-linkCount:373
-linkCount:374
-linkCount:375
-linkCount:376
-linkCount:377
-linkCount:378
-linkCount:379
-linkCount:380
-linkCount:381
-linkCount:382
-linkCount:383
-linkCount:384
-linkCount:385
-linkCount:386
-linkCount:387
-linkCount:388
-linkCount:389
-linkCount:390
-linkCount:391
-linkCount:392
-linkCount:393
-linkCount:394
-linkCount:395
-linkCount:396
-linkCount:397
-linkCount:398
-linkCount:399
-linkCount:400
-linkCount:401
-linkCount:402
-linkCount:403
-linkCount:404
-linkCount:405
-linkCount:406
-linkCount:407
-linkCount:408
-linkCount:409
-linkCount:410
-linkCount:411
-linkCount:412
-linkCount:413
-linkCount:414
-linkCount:415
-linkCount:416
-linkCount:417
-linkCount:418
-linkCount:419
-linkCount:420
-linkCount:421
-linkCount:422
-linkCount:423
-linkCount:424
-linkCount:425
-linkCount:426
-linkCount:427
-linkCount:428
-linkCount:429
-linkCount:430
-linkCount:431
-linkCount:432
-linkCount:433
-linkCount:434
-linkCount:435
-linkCount:436
-linkCount:437
-linkCount:438
-linkCount:439
-linkCount:440
-linkCount:441
-linkCount:442
-linkCount:443
-linkCount:444
-linkCount:445
-linkCount:446
-linkCount:447
-linkCount:448
-linkCount:449
-linkCount:450
-linkCount:451
-linkCount:452
-linkCount:453
-linkCount:454
-linkCount:455
-linkCount:456
-linkCount:457
-linkCount:458
-linkCount:459
-linkCount:460
-linkCount:461
-linkCount:462
-linkCount:463
-linkCount:464
-linkCount:465
-linkCount:466
-linkCount:467
-linkCount:468
-linkCount:469
-linkCount:470
-linkCount:471
-linkCount:472
-linkCount:473
-linkCount:474
-linkCount:475
-linkCount:476
-linkCount:477
-linkCount:478
-linkCount:479
-linkCount:480
-linkCount:481
-linkCount:482
-linkCount:483
-linkCount:484
-linkCount:485
-linkCount:486
-linkCount:487
-linkCount:488
-linkCount:489
-linkCount:490
-linkCount:491
-linkCount:492
-linkCount:493
-linkCount:494
-linkCount:495
-linkCount:496
-linkCount:497
-linkCount:498
-linkCount:499
-linkCount:500
-linkCount:501
-linkCount:502
-linkCount:503
-linkCount:504
-linkCount:505
-linkCount:506
-linkCount:507
-linkCount:508
-linkCount:509
-linkCount:510
-linkCount:511
-linkCount:512
-linkCount:513
-linkCount:514
-linkCount:515
-linkCount:516
-linkCount:517
-linkCount:518
-linkCount:519
-linkCount:520
-linkCount:521
-linkCount:522
-linkCount:523
-linkCount:524
-linkCount:525
-linkCount:526
-linkCount:527
-linkCount:528
-linkCount:529
-linkCount:530
-linkCount:531
-linkCount:532
-linkCount:533
-linkCount:534
-linkCount:535
-linkCount:536
-linkCount:537
-linkCount:538
-linkCount:539
-linkCount:540
-linkCount:541
-linkCount:542
-linkCount:543
-linkCount:544
-linkCount:545
-linkCount:546
-linkCount:547
-linkCount:548
-linkCount:549
-linkCount:550
-linkCount:551
-linkCount:552
-linkCount:553
-linkCount:554
-linkCount:555
-linkCount:556
-linkCount:557
-linkCount:558
-linkCount:559
-linkCount:560
-linkCount:561
-linkCount:562
-linkCount:563
-linkCount:564
-linkCount:565
-linkCount:566
-linkCount:567
-linkCount:568
-linkCount:569
-linkCount:570
-linkCount:571
-linkCount:572
-linkCount:573
-linkCount:574
-linkCount:575
-linkCount:576
-linkCount:577
-linkCount:578
-linkCount:579
-linkCount:580
-linkCount:581
-linkCount:582
-linkCount:583
-linkCount:584
-linkCount:585
-linkCount:586
-linkCount:587
-linkCount:588
-linkCount:589
-linkCount:590
-linkCount:591
-linkCount:592
-linkCount:593
-linkCount:594
-linkCount:595
-linkCount:596
-]]></system-out>
-  </testcase>
-  <testcase name="TeamFilter" classname="Pages.LiveScores_upcoming" time="1.494"/>
-  <testcase name="calendar" classname="Pages.LiveScores_upcoming" time="556.567">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: MicrosoftEdge=95.0.1020.30)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [1bb26ffb7b99d5b8773e5393c1c19f08, getElementText {id=e0f601f2-4abb-4a82-b4c6-8ca96d111724}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: msedge on WINDOWS (1bb26ffb7b99d5b8773e5393c1c19f08)] -&gt; xpath: //div[@class=&apos;react-datepicker__week&apos;]/div]&#10;Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=95.0.1020.30)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1bb26ffb7b99d5b8773e5393c1c19f08, getElementText {id=e0f601f2-4abb-4a82-b4c6-8ca96d111724}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (1bb26ffb7b99d5b8773e5393c1c19f08)] -> xpath: //div[@class='react-datepicker__week']/div]
-Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08
-	at Pages.LiveScores_upcoming.calendar(LiveScores_upcoming.java:126)
-]]></failure>
-  </testcase>
-  <testcase name="calendarclickMonth" classname="Pages.LiveScores_upcoming" time="531.111">
-    <failure message="stale element reference: element is not attached to the page document&#10;  (Session info: MicrosoftEdge=95.0.1020.30)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference&#10;Build info: version: &apos;4.3.0&apos;, revision: &apos;a4995e2c09*&apos;&#10;System info: host: &apos;WX-5CG1285KPX&apos;, ip: &apos;192.168.1.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [1bb26ffb7b99d5b8773e5393c1c19f08, getElementText {id=8b1d4e6b-c8ac-41ed-9c8d-60b2eda3c681}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[EdgeDriver: msedge on WINDOWS (1bb26ffb7b99d5b8773e5393c1c19f08)] -&gt; xpath: //div[@class=&apos;react-datepicker__week&apos;]/div]&#10;Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08" type="org.openqa.selenium.StaleElementReferenceException"><![CDATA[org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=95.0.1020.30)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1bb26ffb7b99d5b8773e5393c1c19f08, getElementText {id=8b1d4e6b-c8ac-41ed-9c8d-60b2eda3c681}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (1bb26ffb7b99d5b8773e5393c1c19f08)] -> xpath: //div[@class='react-datepicker__week']/div]
-Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08
-	at Pages.LiveScores_upcoming.calendarclickMonth(LiveScores_upcoming.java:151)
+	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:202)
 ]]></failure>
   </testcase>
 </testsuite>

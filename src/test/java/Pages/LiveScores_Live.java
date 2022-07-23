@@ -17,7 +17,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v103.network.model.Response;
 import org.testng.annotations.Test;
 
 import junit.framework.Assert;
@@ -31,10 +32,10 @@ public class LiveScores_Live extends browser{
 	public WebDriver driver;
 	public  Logger log = LogManager.getLogger(LiveScores_Live.class);
 	CommonMethods c = new CommonMethods();
-	String gameurl;
+	ArrayList<String>gameUrl = new ArrayList<String>();
 	SimpleDateFormat sd = new SimpleDateFormat("dd MMM yyyy");
 	Date d = new Date();
-	
+	public ChromeDriver driver1;
 	
 	
 	@Test(priority=0)
@@ -111,6 +112,7 @@ public class LiveScores_Live extends browser{
 		{
 		 a.add(topEvent.getAttribute("href"));
 		 String gameurl = topEvent.getAttribute("href");
+		 gameUrl.add(gameurl);
 		}
 		String fileName = new SimpleDateFormat("ddMMyyyy'.txt'").format(new Date());
 		String path = System.getProperty("user.dir")+"//src//test//java//testingSource//LiveScores"+fileName;
@@ -120,14 +122,18 @@ public class LiveScores_Live extends browser{
 		FileOutputStream fos = new FileOutputStream(file);
 		for(int i =0 ; i < a.size();i++)
 		{
-		String gameUrl = a.get(i);
-		byte[] b = gameUrl.getBytes();
+		String gameurl = a.get(i);
+		byte[] b = gameurl.getBytes();
 		fos.write(b);
 		CommonMethods c = new CommonMethods();
 		String s = new String(b);
 		String link = s.toString();
 		int status =  c.brokenurl(driver, link);
+		if(status==400 || status == 404 || status == 500)
+		{
 		log.info("Page url is:"+link+"Status of the page url is:"+ status);
+		Assert.assertFalse(true);
+		}
 		fos.write("\n".getBytes());
 		fos.flush();
 		}
@@ -180,13 +186,12 @@ public class LiveScores_Live extends browser{
 	}
 	
 	@Test(priority = 10)
-	public void clearall()
+	public void clearall() throws InterruptedException
 	{
 		liveScoresObject ls = new liveScoresObject(driver);
 		ls.teamfilter().click();
+		Thread.sleep(1000);
 		ls.clearAll().click();
-		ls.Apply().click();
-		ls.reset().click();
 	}
 	
 	@Test(priority=11)
@@ -206,6 +211,21 @@ public class LiveScores_Live extends browser{
 			log.info("Page url is:"+url+"Status of the page url is:"+ status);
 			Assert.assertFalse(true);
 			}
+		}
+	}
+	
+	@Test(priority=12)
+	public void LiveBackendTest() throws IOException, InterruptedException
+	{
+		CommonMethods c = new CommonMethods();
+		driver1 = browserchrome();
+		String liveScoresurl = c.PropertiesData("liveScores");
+		testData t = new testData();
+		
+		Response response = t.BackendtestData(driver1,liveScoresurl);
+		if(response.getStatus() == 400 || response.getStatus() == 404 || response.getStatus() == 500)
+		{
+			log.info("Url of the page:"+response.getUrl()+"status of the page:"+response.getStatus());
 		}
 	}
 	}

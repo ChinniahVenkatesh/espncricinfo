@@ -61,7 +61,7 @@ public class liveScoresObject {
 			return LiveScorestab;
 		}
 	
-		@FindBy(css="div[class*='ds-w-96 ds-flex ds-shadow-elevated'] div div")
+		@FindBy(css="div[class*='ds-w-96 ds-flex ds-shadow-elevated'] div div div i")
 		WebElement teamfilter;
 		
 		public WebElement teamfilter()
@@ -85,7 +85,7 @@ public class liveScoresObject {
 			return Apply;
 		}
 		
-		@FindBy(xpath="//span[text()='All Matches']/parent::a")
+		@FindBy(xpath="//span[text()='See all']/parent::a")
 		List<WebElement> viewallMatches;
 		
 		public List<WebElement> viewallMatches()
@@ -101,5 +101,11 @@ public class liveScoresObject {
 			return clearAll;
 		}
 		
+		@FindBy(css="button[class*='active:ds-bg-ui-fill-hover focus:ds-ring-4']")
+		WebElement viewnext30days;
 		
+		public WebElement viewnext30days()
+		{
+			return viewnext30days;
+		}
 }

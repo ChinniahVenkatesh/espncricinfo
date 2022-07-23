@@ -45,13 +45,7 @@ public class LiveScoresUpcoming extends browser{
 		return dateEvents;
 	}
 	
-	@FindBy(css="div[class*='hover:ds-bg-ui-fill-hover']:nth-child(1) span")
-	WebElement clickonoption;
-	
-	public WebElement clickonoption()
-	{
-		return clickonoption;
-	}
+
 	
 	@FindBy(css="button[class*='ds-shadow-elevated ds-border-0']")
 	WebElement backToCurrent;
@@ -77,11 +71,5 @@ public class LiveScoresUpcoming extends browser{
 		return specificdate;
 	}
 	
-	By nextmonth = By.xpath("//button[@aria-label='Next Month']");
-	
-	public WebElement nextmonth()
-	{
-		return driver.findElement(nextmonth);
-	}
 	
 }

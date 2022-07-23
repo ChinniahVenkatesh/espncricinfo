@@ -53,12 +53,11 @@ public class LiveScores_upcoming extends browser{
 		Assert.assertEquals("Upcoming cricket match schedules, fixtures and timetables | ESPNcricinfo.com", title);
 	}
 	
-	@Test(priority=1)
+	@Test(priority=1,enabled = false)
 	public void clickviewByDay() throws InterruptedException {
 		LiveScoresUpcoming ls = new LiveScoresUpcoming(driver);
 		ls.findByoption().click();
-		WebElement options = ls.clickonoption();
-		options.click();	
+		
 		Thread.sleep(1000);
 	}
 	
@@ -141,7 +140,6 @@ public class LiveScores_upcoming extends browser{
 	{
 		LiveScoresUpcoming lsu = new LiveScoresUpcoming(driver);
 		lsu.calender().click();
-		lsu.nextmonth();
 		SimpleDateFormat sd = new SimpleDateFormat("dd");
 		Date d = new Date();
 		String dar = sd.format(d);
@@ -160,5 +158,22 @@ public class LiveScores_upcoming extends browser{
 		String dateUrl = driver.getCurrentUrl();
 		CommonMethods c = new CommonMethods();
 		c.brokenurl(driver, dateUrl);
+	}
+	
+	@Test(priority=7)
+	public void next30days() throws IOException, InterruptedException
+	{
+		JavascriptExecutor je = (JavascriptExecutor) driver;
+		je.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+		liveScoresObject ls = new liveScoresObject(driver);
+		ls.viewnext30days().click();
+		String url = driver.getCurrentUrl();
+		CommonMethods c = new CommonMethods();
+		int status = c.brokenurl(driver, url);
+		
+		if(status == 404 || status == 400 || status == 500 || status == 200)
+		{
+		log.info("Page url is:"+url+"Status of the page url is:"+ status);
+		}
 	}
 }

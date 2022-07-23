@@ -104,11 +104,12 @@ public class homepage extends browser {
 	}
 	
 	@Test(priority=3)
-	public void backendTest() throws IOException, InterruptedException
+	public void gamePagebackendTest() throws IOException, InterruptedException
 	{
 		CommonMethods c = new CommonMethods();
 		driver1= browserchrome();
 		driver1.get(c.PropertiesData("domainurl"));
+		driver1.manage().window().maximize();
 		for(int i =0; i< gamepageUrl.size();i++)
 		{
 		String pageLink = gamepageUrl.get(i);
@@ -119,5 +120,20 @@ public class homepage extends browser {
 			log.info("Url of the page:"+response.getUrl()+"status of the page:"+response.getStatus());
 		}
 		}
+	}
+	
+	@Test(priority=4)
+	public void homepageBackendTest() throws IOException, InterruptedException
+	{
+		CommonMethods c = new CommonMethods();
+		String homeUrl = c.PropertiesData("domainurl");
+		testData t = new testData();
+		Response response = t.BackendtestData(driver1, homeUrl);
+		
+		if(response.getStatus() == 400 || response.getStatus() == 404 || response.getStatus() == 500)
+		{
+			log.info("Url of the page:"+response.getUrl()+"status of the page:"+response.getStatus());
+		}
+		
 	}
 }

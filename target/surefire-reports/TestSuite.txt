@@ -1,70 +1,30 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 4,048.067 s <<< FAILURE! - in TestSuite
-Pages.LiveScores_Live.clearall  Time elapsed: 180.644 s  <<< FAILURE!
+Tests run: 12, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 520.334 s <<< FAILURE! - in TestSuite
+Pages.LiveScores_Live.clearall  Time elapsed: 180.523 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 java.util.concurrent.TimeoutException
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d15b20592038263ffdfe46f976d4f515, findElement {using=xpath, value=//span[text()='Apply']}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:59547}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d15b20592038263ffdfe46f976d4f515
-	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:188)
+Command: [10f2e1292cf03a949d7c6297682282e3, findElement {using=xpath, value=//span[text()='Apply']}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:57886}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57886/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10f2e1292cf03a949d7c6297682282e3
+	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:192)
 Caused by: java.util.concurrent.TimeoutException
-	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:188)
+	at Pages.LiveScores_Live.clearall(LiveScores_Live.java:192)
 
-Pages.LiveScores_Live.allmatches  Time elapsed: 180.015 s  <<< FAILURE!
+Pages.LiveScores_Live.allmatches  Time elapsed: 180.017 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: 
 java.util.concurrent.TimeoutException
 Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+System info: host: 'WX-5CG1285KPX', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [d15b20592038263ffdfe46f976d4f515, findElements {using=xpath, value=//span[text()='All Matches']/parent::a}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:59547}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59547/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d15b20592038263ffdfe46f976d4f515
-	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:198)
+Command: [10f2e1292cf03a949d7c6297682282e3, findElements {using=xpath, value=//span[text()='See all']/parent::a}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:57886}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57886/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 10f2e1292cf03a949d7c6297682282e3
+	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:202)
 Caused by: java.util.concurrent.TimeoutException
-	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:198)
-
-Pages.LiveScores_upcoming.clickdate  Time elapsed: 2,337.905 s  <<< FAILURE!
-org.openqa.selenium.JavascriptException: 
-javascript error: Cannot set properties of null (setting 'destination_url')
-  (Session info: MicrosoftEdge=95.0.1020.30)
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1bb26ffb7b99d5b8773e5393c1c19f08, executeScript {script=window.open(), args=[]}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08
-	at Pages.LiveScores_upcoming.clickdate(LiveScores_upcoming.java:93)
-
-Pages.LiveScores_upcoming.calendar  Time elapsed: 556.567 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=95.0.1020.30)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1bb26ffb7b99d5b8773e5393c1c19f08, getElementText {id=e0f601f2-4abb-4a82-b4c6-8ca96d111724}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (1bb26ffb7b99d5b8773e5393c1c19f08)] -> xpath: //div[@class='react-datepicker__week']/div]
-Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08
-	at Pages.LiveScores_upcoming.calendar(LiveScores_upcoming.java:126)
-
-Pages.LiveScores_upcoming.calendarclickMonth  Time elapsed: 531.111 s  <<< FAILURE!
-org.openqa.selenium.StaleElementReferenceException: 
-stale element reference: element is not attached to the page document
-  (Session info: MicrosoftEdge=95.0.1020.30)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#stale_element_reference
-Build info: version: '4.3.0', revision: 'a4995e2c09*'
-System info: host: 'WX-5CG1285KPX', ip: '192.168.1.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [1bb26ffb7b99d5b8773e5393c1c19f08, getElementText {id=8b1d4e6b-c8ac-41ed-9c8d-60b2eda3c681}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 95.0.1020.30, ms:edgeOptions: {debuggerAddress: localhost:60709}, msedge: {msedgedriverVersion: 95.0.1020.53 (9087d157c3938..., userDataDir: C:\Users\VENKATEC\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:60709/devtoo..., se:cdpVersion: 95.0.1020.30, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Element: [[EdgeDriver: msedge on WINDOWS (1bb26ffb7b99d5b8773e5393c1c19f08)] -> xpath: //div[@class='react-datepicker__week']/div]
-Session ID: 1bb26ffb7b99d5b8773e5393c1c19f08
-	at Pages.LiveScores_upcoming.calendarclickMonth(LiveScores_upcoming.java:151)
+	at Pages.LiveScores_Live.allmatches(LiveScores_Live.java:202)
 

@@ -47,10 +47,9 @@ public  Response  BackendtestData(ChromeDriver driver, String url) throws IOExce
 	response = res.getResponse();
 	
 });
-	Thread.sleep(10000);
+	Thread.sleep(100000);
 	driver.close();
 	driver.switchTo().window(parentWindow);
 	return response;
 }
-
 }
