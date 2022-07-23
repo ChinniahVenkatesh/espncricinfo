@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -166,7 +167,8 @@ public class LiveScores_upcoming extends browser{
 		JavascriptExecutor je = (JavascriptExecutor) driver;
 		je.executeScript("window.scrollBy(0,document.body.scrollHeight)");
 		liveScoresObject ls = new liveScoresObject(driver);
-		ls.viewnext30days().click();
+		Actions a = new Actions(driver);
+		a.moveToElement(ls.viewnext30days()).click();
 		String url = driver.getCurrentUrl();
 		CommonMethods c = new CommonMethods();
 		int status = c.brokenurl(driver, url);

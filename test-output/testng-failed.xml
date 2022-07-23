@@ -5,8 +5,7 @@
     <classes>
       <class name="Pages.LiveScoresResult">
         <methods>
-          <include name="seriesFilter"/>
-          <include name="pageTitle"/>
+          <include name="previous30days"/>
         </methods>
       </class> <!-- Pages.LiveScoresResult -->
     </classes>

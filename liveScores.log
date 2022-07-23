@@ -14,3 +14,5 @@ Session ID: fa0bdb99ac1d55494e74251a895131f8
 2022-07-23 11:56:40,380 [INFO ] Pages.LiveScores_Live [TestNG-test=Test-1] Page url is:https://pp.espncricinfo.com/series/south-africa-in-england-2022-1276896/england-vs-south-africa-2nd-odi-1276911/full-scorecardStatus of the page url is:403
 2022-07-23 11:56:42,392 [INFO ] Pages.LiveScores_Live [TestNG-test=Test-1] Page url is:https://pp.espncricinfo.com/series/south-africa-in-england-2022-1276896/england-vs-south-africa-2nd-odi-1276911/match-reportStatus of the page url is:403
 2022-07-23 11:56:44,299 [INFO ] Pages.LiveScores_Live [TestNG-test=Test-1] Page url is:https://pp.espncricinfo.com/series/south-africa-in-england-2022-1276896/england-vs-south-africa-2nd-odi-1276911/match-photoStatus of the page url is:403
+2022-07-23 23:37:34,245 [INFO ] Pages.homepage [TestNG-test=Test-1] Live cricket scores, match schedules, latest cricket news, cricket videos
+2022-07-23 23:37:53,886 [INFO ] Pages.LiveScores_Live [TestNG-test=Test-2] Page url is:https://pp.espncricinfo.com/live-cricket-scoreStatus of the page url is:403
