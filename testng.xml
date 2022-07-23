@@ -4,8 +4,6 @@
   <test parallel = "classes" name="Test">
     <classes>
 	<class name="Pages.LiveScores_Live"/>
-		<class name="Pages.LiveScores_upcoming"/>
-		<class name ="Pages.homepage"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

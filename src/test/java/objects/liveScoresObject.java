@@ -69,7 +69,7 @@ public class liveScoresObject {
 		return teamfilter;
 		}
 		
-		@FindBy(xpath="//div[@class='ds-grid ds-grid-cols-2 ds-gap-x-4 ds-px-4']/div[1]/div/span")
+		@FindBy(xpath="//ul[@class='ds-flex ds-flex-col ds-grid ds-grid-cols-2 ds-gap-x-4 ds-px-2']/li")
 		WebElement teamOption;
 		
 		public WebElement teamOption()
