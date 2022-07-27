@@ -42,4 +42,12 @@ public class homepageObject {
 	{
 		return hsbScorecells;
 	}
+	
+	@FindBy(xpath="//div[@class='ci-hsb-carousel']/div/div/div/div/div/div/a/div/div/div[3]/a")
+	List<WebElement> scoreCellLinks;
+	
+	public List<WebElement> scoreCellLinks()
+	{
+		return scoreCellLinks;
+	}
 }

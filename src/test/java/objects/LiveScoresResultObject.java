@@ -15,7 +15,7 @@ public class LiveScoresResultObject {
 		this.driver = driver;
 	}
 	
-	@FindBy(xpath="//div[@class='ds-popper-wrapper ds-grow ds-flex ds-items-center ds-w-1/2']/div/div/i")
+	@FindBy(xpath="//div[@class='ds-popper-wrapper ds-flex ds-w-full']/div/div[2]/div/i")
 	WebElement seriesFilter;
 	
 	public WebElement seriesFilter()

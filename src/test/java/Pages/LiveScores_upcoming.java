@@ -13,6 +13,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.v103.network.model.Response;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -22,10 +23,12 @@ import objects.browser;
 import objects.homepageObject;
 import objects.liveScoresObject;
 import utilities.CommonMethods;
+import utilities.testData;
 
 public class LiveScores_upcoming extends browser{
 	
 	public WebDriver driver;
+	public ChromeDriver driver1;
 	public  Logger log = LogManager.getLogger(LiveScores_upcoming.class);
 	String dateurl;
 	
@@ -73,8 +76,11 @@ public class LiveScores_upcoming extends browser{
 	}
 	
 	@Test(priority=3)
-	public void clickdate() throws IOException, InterruptedException
+	public void clickdateEvent() throws IOException, InterruptedException
 	{
+		CommonMethods c = new CommonMethods();
+		driver1= browserchrome();
+		driver1.get(c.PropertiesData("domainurl"));
 		LiveScoresUpcoming ls = new LiveScoresUpcoming(driver);
 		List<WebElement> dates = ls.date();
 		int count = 0;
@@ -95,6 +101,8 @@ public class LiveScores_upcoming extends browser{
 					failcount = failcount+1;
 				log.info("Page url is:"+url+"Status of the page url is:"+ status);
 				}
+				testData t = new testData();
+				t.BackendtestData(driver1, url);
 			}
 			break;
 		}
@@ -159,6 +167,7 @@ public class LiveScores_upcoming extends browser{
 		String dateUrl = driver.getCurrentUrl();
 		CommonMethods c = new CommonMethods();
 		c.brokenurl(driver, dateUrl);
+		
 	}
 	
 	@Test(priority=7)
@@ -178,4 +187,23 @@ public class LiveScores_upcoming extends browser{
 		log.info("Page url is:"+url+"Status of the page url is:"+ status);
 		}
 	}
+	
+	@Test(priority = 8)
+	public void dateTest() throws IOException, InterruptedException
+	{
+		
+		String url = "https://pp.espncricinfo.com/live-cricket-match-schedule-fixtures?date=";
+		Date d = new Date();
+		String year = "06-05-2023";
+		driver.get(url+year);
+		String Url = driver.getCurrentUrl();
+		CommonMethods c = new CommonMethods();
+		int status = c.brokenurl(driver, Url);
+		System.out.println("Page url is:"+Url+"Status of the page url is:"+ status);
+		driver1= browserchrome();
+		driver1.get(c.PropertiesData("domainurl"));
+		testData t = new testData();
+		t.BackendtestData(driver1, Url);
+	}
+	
 }

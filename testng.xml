@@ -3,10 +3,10 @@
 <suite name="Suite">
   <test parallel = "classes" name="Test">
     <classes>
-	<class name="Pages.LiveScores_Live"/>
-	<class name="Pages.homepage"/>
-	<class name ="Pages.LiveScores_upcoming"/>
-	<class name="Pages.LiveScoresResult"></class>
+	
+	<class name="Pages.LiveScores_upcoming"/>
+<class name ="Pages.LiveScores_Live"/>
+<class name="Pages.LiveScoresResult"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

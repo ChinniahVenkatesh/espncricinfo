@@ -20,6 +20,7 @@ import objects.browser;
 import objects.homepageObject;
 import objects.liveScoresObject;
 import utilities.CommonMethods;
+import utilities.testData;
 
 public class LiveScoresResult extends browser{
 	
@@ -29,8 +30,8 @@ public class LiveScoresResult extends browser{
 	@Test(priority=0)
 	public void pageTitle() throws IOException, InterruptedException
 	{
-		driver = browserInstallation();
 		CommonMethods c = new CommonMethods();
+		driver = browserInstallation();
 		driver.get(c.PropertiesData("domainurl"));
 		driver.manage().window().maximize();
 		Thread.sleep(10000);
@@ -52,24 +53,29 @@ public class LiveScoresResult extends browser{
 	@Test(priority=3,enabled=true)
 	public void dates() throws IOException, InterruptedException
 	{
+		driver1= browserchrome();
+		CommonMethods c = new CommonMethods();
+		driver1.get(c.PropertiesData("domainurl"));
 		LiveScoresUpcoming les = new LiveScoresUpcoming(driver);
 		liveScoresObject ls = new liveScoresObject(driver);
 		List<WebElement> dates = les.date();
 		List<WebElement> dateEvents = ls.Events();
+		testData t = new testData();
 		for(WebElement date : dates)
 		{
 			date.click();
 			for(WebElement dateEvent: dateEvents)
 			{
 				String gameUrl = dateEvent.getAttribute("href");
-				CommonMethods c = new CommonMethods();
 				c.brokenurl(driver, gameUrl);
 				int status = c.brokenurl(driver, gameUrl);
 				if(status == 404 || status == 400 || status == 500 || status == 200)
 				{
 				log.info("Page url is:"+gameUrl+"Status of the page url is:"+ status);
 				}
+				t.BackendtestData(driver1, gameUrl);
 			}
+			
 		}
 	}
 	
@@ -109,7 +115,4 @@ public class LiveScoresResult extends browser{
 		log.info("Page url is:"+url+"Status of the page url is:"+ status);
 		}
 	}
-	
-	
-
 }

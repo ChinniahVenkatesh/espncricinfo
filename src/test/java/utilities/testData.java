@@ -23,33 +23,37 @@ import org.openqa.selenium.devtools.v103.network.model.Response;
 
 public class testData {
 	
-	public ChromeDriver driver;
+	public ChromeDriver driver1;
 	public Logger log = LogManager.getLogger(testData.class);
 	public Response response;
 
-public  Response  BackendtestData(ChromeDriver driver, String url) throws IOException, InterruptedException 
+public  void BackendtestData(ChromeDriver driver1, String url) throws IOException, InterruptedException 
 {
-	JavascriptExecutor je = (JavascriptExecutor) driver;
+	JavascriptExecutor je = (JavascriptExecutor) driver1;
 	je.executeScript("window.open()");
-	Set<String> windows = driver.getWindowHandles();
+	Set<String> windows = driver1.getWindowHandles();
 	Iterator<String> i = windows.iterator();
 	String  parentWindow = i.next();
 	while(i.hasNext())
 	{
-		driver.switchTo().window(i.next());
+		driver1.switchTo().window(i.next());
 	}
-	driver.get(url);
-	DevTools devtools = driver.getDevTools();
+	driver1.get(url);
+	DevTools devtools = driver1.getDevTools();
 	devtools.createSession();
-	devtools.send(Network.enable(Optional.<Integer> empty(), Optional.<Integer> empty(), Optional.<Integer> empty()));
-	devtools.addListener(Network.responseReceived(), res ->
+	devtools.send(Network.enable(Optional.empty(), Optional.empty(),Optional.empty()));
+	devtools.addListener(Network.responseReceived(), res -> 
 	{
-	response = res.getResponse();
-	
-});
-	Thread.sleep(100000);
-	driver.close();
-	driver.switchTo().window(parentWindow);
-	return response;
+	 response = res.getResponse();
+	int Status =  response.getStatus();
+	 if(Status== 400 || Status == 404 || Status == 500)
+	 {
+	System.out.println("URL is:"+response.getUrl()+"and status is"+response.getStatus());
+	 }
+	});
+	driver1.navigate().refresh();
+	Thread.sleep(10000);
+	driver1.close();
+	driver1.switchTo().window(parentWindow);
 }
 }

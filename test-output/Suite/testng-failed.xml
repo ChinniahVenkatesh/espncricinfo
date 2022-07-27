@@ -5,23 +5,18 @@
     <classes>
       <class name="Pages.LiveScores_upcoming">
         <methods>
-          <include name="TeamFilter"/>
           <include name="calendar"/>
           <include name="calendarclickMonth"/>
-          <include name="clickdate"/>
         </methods>
       </class> <!-- Pages.LiveScores_upcoming -->
-      <class name="Pages.LiveScores_Live">
+      <class name="Pages.LiveScoresResult">
         <methods>
-          <include name="allmatches"/>
+          <include name="dates"/>
           <include name="clearall"/>
+          <include name="seriesFilter"/>
+          <include name="previous30days"/>
         </methods>
-      </class> <!-- Pages.LiveScores_Live -->
-      <class name="Pages.homepage">
-        <methods>
-          <include name="backendTest"/>
-        </methods>
-      </class> <!-- Pages.homepage -->
+      </class> <!-- Pages.LiveScoresResult -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

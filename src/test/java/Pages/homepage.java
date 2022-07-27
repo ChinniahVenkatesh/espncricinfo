@@ -114,28 +114,43 @@ public class homepage extends browser {
 		{
 		String pageLink = gamepageUrl.get(i);
 		testData t = new testData();
-		Response response = t.BackendtestData(driver1, pageLink);
-		if(response.getStatus() == 400 || response.getStatus() == 404 || response.getStatus() == 500)
-		{
-			log.info("Url of the page:"+response.getUrl()+"status of the page:"+response.getStatus());
-		}
+		t.BackendtestData(driver1, pageLink);
 		}
 	}
 	
-	@Test(priority=4)
+	@Test(priority=5)
 	public void homepageBackendTest() throws IOException, InterruptedException
 	{
 		CommonMethods c = new CommonMethods();
 		String homeUrl = c.PropertiesData("domainurl");
 		testData t = new testData();
-		Response response = t.BackendtestData(driver1, homeUrl);
-		
-		if(response.getStatus() == 400 || response.getStatus() == 404 || response.getStatus() == 500)
-		{
-			log.info("Url of the page:"+response.getUrl()+"status of the page:"+response.getStatus());
-		}
+		t.BackendtestData(driver1, homeUrl);
 		
 	}
+	
+	@Test(priority=6)
+	public void scorecellLinks() throws IOException, InterruptedException
+	{
+		CommonMethods c = new CommonMethods();
+		 homepageObject ho = new homepageObject(driver);
+		driver1= browserchrome();
+		driver1.get(c.PropertiesData("domainurl"));
+		 List<WebElement> scorecellLink = ho.scoreCellLinks();
+		 for(WebElement Link:scorecellLink)
+		 {
+			 String link = Link.getAttribute("href");
+			 int Status = c.brokenurl(driver, link);
+			 System.out.println("Page url is:"+link+"Status of the page url is:"+ Status);
+				if(Status == 404 || Status == 504 || Status ==  400 || Status == 200)
+				{
+				log.info("Page url is:"+link+"Status of the page url is:"+ Status);
+				}
+				testData t = new testData();
+				t.BackendtestData(driver1, link);
+		 }
+	}
+	
+	
 	
 	
 }
